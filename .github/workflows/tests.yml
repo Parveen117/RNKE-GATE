@@ -1,0 +1,24 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: python -m pytest tests benchmark/tests -q
+      - name: demo runs and its ledger verifies
+        run: |
+          python examples/agent_under_attack.py
+          rnke-gate verify demo_ledger.jsonl
+      - name: benchmark passes and its result has not drifted
+        run: |
+          python benchmark/run_benchmark.py
+          rnke-gate verify benchmark/benchmark_ledger.jsonl
+          git diff --exit-code benchmark/BENCHMARK_RESULT.json benchmark/EXPECTED_BENCHMARK.sha256

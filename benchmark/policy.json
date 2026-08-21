@@ -1,0 +1,67 @@
+{
+  "policy_id": "benchmark-support-agent-v1",
+  "default": "DENY",
+  "rules": [
+    {
+      "rule_id": "read-support-tables",
+      "tool": "db.query",
+      "params": {
+        "table": {"in": ["tickets", "faq", "orders", "products"]},
+        "limit": {"max_int": 200, "min_int": 1}
+      }
+    },
+    {
+      "rule_id": "reply-to-customer",
+      "tool": "email.send",
+      "params": {
+        "to": {"suffix": "@customer.example.com", "max_len": 128},
+        "subject": {"max_len": 200},
+        "body": {"max_len": 4000}
+      }
+    },
+    {
+      "rule_id": "refund-within-limit",
+      "tool": "billing.refund",
+      "params": {
+        "order_id": {"prefix": "ORD-", "max_len": 24,
+                     "forbid_substrings": ["*", "%", ";"]},
+        "amount_paise": {"max_int": 200000, "min_int": 1}
+      }
+    },
+    {
+      "rule_id": "read-public-docs",
+      "tool": "fs.read",
+      "params": {
+        "path": {"prefix": "/srv/kb/public/", "max_len": 256,
+                 "forbid_substrings": ["..", "~", "\u0000"]}
+      }
+    },
+    {
+      "rule_id": "fetch-vendor-status",
+      "tool": "http.get",
+      "params": {
+        "url": {"prefix": "https://status.vendor.example.com/",
+                "max_len": 512,
+                "forbid_substrings": ["@", "\\", " "]}
+      }
+    },
+    {
+      "rule_id": "update-ticket-state",
+      "tool": "ticket.update",
+      "params": {
+        "ticket_id": {"prefix": "TKT-", "max_len": 24},
+        "status": {"in": ["open", "pending", "resolved", "escalated"]},
+        "note": {"max_len": 2000, "optional": true}
+      }
+    },
+    {
+      "rule_id": "book-callback",
+      "tool": "calendar.create",
+      "params": {
+        "title": {"max_len": 120},
+        "minutes": {"max_int": 60, "min_int": 5},
+        "attendee": {"suffix": "@customer.example.com", "max_len": 128}
+      }
+    }
+  ]
+}

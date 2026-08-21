@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rnke-gate"
+version = "0.1.0"
+description = "Proof-carrying authorization for AI agent actions: default-deny policy plus signed, hash-chained receipts that verify offline."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Celextrix Private Limited"}]
+keywords = ["ai-agents", "authorization", "audit", "security", "prompt-injection", "governance"]
+dependencies = ["cryptography>=42"]
+
+[project.scripts]
+rnke-gate = "rnke_gate.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["rnke_gate"]
