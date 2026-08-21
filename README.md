@@ -17,9 +17,25 @@ a customer's security team, a regulator — can check for themselves what
 your agent was authorized to do, what it actually did, and that nobody
 edited the record afterwards.
 
+## Why this, and not a detection tool
+
+The agent security market has largely organised itself around *detection* —
+spotting prompt injection, filtering outputs, scoring behaviour. Useful, and
+increasingly commodity.
+
+This solves the question that comes after: **when the auditor asks what your
+agent was authorised to do, what do you hand them?** Not a dashboard you
+control. A file they can verify themselves, offline, that shows the policy in
+force, the decision, and proof the record was not edited afterwards.
+
+Detection tells you something looked wrong. A receipt proves what was allowed.
+Regulators, customers and audit functions ask for the second one.
+
 ## The 60-second demo
 
 ```bash
+git clone https://github.com/Parveen117/RNKE-GATE.git
+cd RNKE-GATE
 pip install -e .
 python examples/agent_under_attack.py
 rnke-gate verify demo_ledger.jsonl
@@ -171,9 +187,12 @@ Read these before trusting anything here.
 ## Install
 
 ```bash
-pip install -e .          # then: rnke-gate --help
-python -m pytest tests -q # 27 tests
+git clone https://github.com/Parveen117/RNKE-GATE.git
+cd RNKE-GATE && pip install -e .        # then: rnke-gate --help
+python -m pytest tests benchmark/tests -q   # 35 tests
 ```
+
+Not on PyPI yet.
 
 Requires Python 3.10+ and `cryptography`.
 
