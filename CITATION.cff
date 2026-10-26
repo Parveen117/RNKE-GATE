@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the exact release DOI and commit used; see RESEARCH_PROVENANCE.md. Preserve artifact-specific author and contributor credits."
+title: "RNKE Gate"
+type: software
+authors:
+  - family-names: "Monty"
+    orcid: "https://orcid.org/0009-0005-6948-209X"
+repository-code: "https://github.com/Parveen117/RNKE-GATE"
+url: "https://github.com/Parveen117/RNKE-GATE"

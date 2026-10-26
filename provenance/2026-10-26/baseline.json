@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "repository": "Parveen117/RNKE-GATE",
+  "recorded_at_utc": "2026-10-26T14:24:22.218045+00:00",
+  "scope": "Default-branch content immediately before the 2026-10-26 provenance update.",
+  "baseline_branch": "main",
+  "baseline_commit": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+  "baseline_tree": "36ad3a02162e6386dbcdd2225f08eb094e859fef",
+  "baseline_commit_url": "https://github.com/Parveen117/RNKE-GATE/commit/206af48cae62dc39966f92e17c87d66d4a18d6f2",
+  "git_object_hash_algorithm": "sha1",
+  "content_hash_algorithm": "sha256",
+  "limits": [
+    "Git timestamps are metadata, not independent trusted timestamps.",
+    "This manifest excludes its own later provenance update.",
+    "A prior DOI covers its archived version, not later commits.",
+    "Hashes establish content identity, not scientific validity, authorship adjudication, or legal priority."
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "c03041d9b450836ec07b0ec62bff3c4d4e1d8acc",
+      "size_bytes": 827,
+      "sha256": "dff6e2c16d9cf217310b1c1a814812260ccf0cce2b718cf02e39b1f9a5a2cfbd"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "db7484a68c1c07b468d1aa477d9f3d2d66ee3c58",
+      "size_bytes": 70,
+      "sha256": "4d64cd8fe17165ffd5fbc5f733ae40509fc9d9a4f2106f8693cee271dd40bf24"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "d84928cf067b05ba520309bc5e1dbcdff5fde3bc",
+      "size_bytes": 824,
+      "sha256": "434cd41e11aff227fd3a92588b910174f395f0c05d368e9d01c4e8f77a532a00"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "a97219dbcbaeb34c69dd18b6fb38be4981fb3df6",
+      "size_bytes": 7099,
+      "sha256": "4da45a6427795009cb1a46904960a9fea3da3cfbdd945b711f8a53ca9da89c69"
+    },
+    {
+      "path": "benchmark/BENCHMARK_RESULT.json",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "b1db55c7b0b5403f756d69e65e47e3d48a1fe117",
+      "size_bytes": 20716,
+      "sha256": "79a2460a34dc6de53ff98eb9bcf778179a48b5f9429852efb9693ed51fa5ebe9"
+    },
+    {
+      "path": "benchmark/EXPECTED_BENCHMARK.sha256",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "ebff3e8f74da9515f6f93b8b438dca9b12f00c9f",
+      "size_bytes": 65,
+      "sha256": "554f32f75a011285417b4e133f415dc8f7405a4573997bb7e35ff18efe495abf"
+    },
+    {
+      "path": "benchmark/README.md",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "d14e107dd8605964f9bb696a8fa2cf1f6bb00d60",
+      "size_bytes": 4789,
+      "sha256": "2f51516a89a6865c74a88924472a80101097c01ffd2eddc5bf682f202934f2b3"
+    },
+    {
+      "path": "benchmark/cases.json",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "23747948109b8af2bd8858246f89cf75edc7e66d",
+      "size_bytes": 23087,
+      "sha256": "69338d0b564ad6bc43442ada17df77e55c443d221235270814a5394e61319830"
+    },
+    {
+      "path": "benchmark/policy.json",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "f2ba72eb133aea7db89b1b73d884c34466fd1f77",
+      "size_bytes": 1865,
+      "sha256": "4384e8e61c3a4f8632d2226f4ebabfc637f187bc5571c7ae84827851bbb8dec0"
+    },
+    {
+      "path": "benchmark/run_benchmark.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "5398e1402211473124d4f030a84b1a46f008dbd3",
+      "size_bytes": 10167,
+      "sha256": "2323c392a52c001eb59be4661491802e39e430f2f4989d928d1d10ad8a8f2507"
+    },
+    {
+      "path": "benchmark/tests/test_benchmark.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "cb02f4d73a6dadb7d7d77321006952dcdc3d2e1e",
+      "size_bytes": 3163,
+      "sha256": "b296df759b7bcb12565add947e8035bef2b71fb1d204ae01bbfe0157af9e0937"
+    },
+    {
+      "path": "examples/agent_under_attack.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "165da2543f8be714ce97bdbad100759155f874f5",
+      "size_bytes": 3798,
+      "sha256": "ac0485d013ece763799d2a5634d0a4fab1bcb97596be3d44a59cc9fe224f4d99"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "4dfa1631f3fe4185591355e8df7851bd0899a060",
+      "size_bytes": 687,
+      "sha256": "b0ca7476824dc274a3102c8ee15b80b8746f48921637a972b67a54e6dc198842"
+    },
+    {
+      "path": "rnke_gate/__init__.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "2fd37a2126f337ac761781ec888df9300bbac936",
+      "size_bytes": 574,
+      "sha256": "572269ecb7146a2f3017aa4da8e31dba379fe64ea9b5649f36e2b6a5cadb5307"
+    },
+    {
+      "path": "rnke_gate/canonical.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "f56c1034976fc3c304842ebaecdc585b9e75e217",
+      "size_bytes": 2507,
+      "sha256": "46e5eb60ea520e1d71a6fe97fac1891f7b0e8068f5906351f8a2dfd1f8c1f8ff"
+    },
+    {
+      "path": "rnke_gate/cli.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "53ae68db5968b77ca808b2bf3e1b3d2b1c31f5b7",
+      "size_bytes": 4700,
+      "sha256": "df99b7fd47fe208a42c5487f14634f60a6cd3d591ba4a360518db1ccd24a6abc"
+    },
+    {
+      "path": "rnke_gate/gate.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "84489ddea2194a7a9913787ddf6785f0cdd99f45",
+      "size_bytes": 6326,
+      "sha256": "295b26add46e9b4700a23218c52eb204cff036c9ad30aa89ae704b90e39e2fdf"
+    },
+    {
+      "path": "rnke_gate/identity.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "89b75816c598e3f2aa8b83d2dd42d9b566986d1a",
+      "size_bytes": 3926,
+      "sha256": "93e44f761156ba8c7cc9a5388121a39da0ff1b8cb37c3a4e807a8617a79bcecb"
+    },
+    {
+      "path": "rnke_gate/ledger.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "6f45e0e8c93a652f66d32ab0625e15271938251c",
+      "size_bytes": 10043,
+      "sha256": "c0cfc346b6ba7070903f622b2a9b3bfc33a767eed673def57c2a57f9d839adf5"
+    },
+    {
+      "path": "rnke_gate/policy.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "31ebb7dd7ea2201876aa3c07f7e793f2459db703",
+      "size_bytes": 10122,
+      "sha256": "dcc679153c3e6233b7fbb8ca2c643a3321b004a6411ceb6823ec4f291783b69a"
+    },
+    {
+      "path": "tests/test_gate.py",
+      "mode": "100644",
+      "git_object_type": "blob",
+      "git_object_sha1": "8276f64169b3a948b467ce9af4e669c5e04f3a2c",
+      "size_bytes": 10852,
+      "sha256": "a02282291cee93570d82b8a4dca658862a42839e761f3da122cf902f7b360bdb"
+    }
+  ],
+  "published_releases": [
+    {
+      "tag": "v1.1",
+      "published_at": "2026-08-28T11:31:40Z",
+      "url": "https://github.com/Parveen117/RNKE-GATE/releases/tag/v1.1",
+      "immutable": false,
+      "tag_object": {
+        "sha": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Parveen117/RNKE-GATE/git/commits/206af48cae62dc39966f92e17c87d66d4a18d6f2"
+      }
+    }
+  ],
+  "zenodo_archive": {
+    "repository": "Parveen117/RNKE-GATE",
+    "record_id": 22143545,
+    "doi": "10.5281/zenodo.22143545",
+    "concept_doi": "10.5281/zenodo.22143544",
+    "version": "v1.1",
+    "record_created_at": "2026-08-28T11:31:45.264382+00:00",
+    "record_modified_at": "2026-08-28T11:40:19.014081+00:00",
+    "metadata_license": null,
+    "record_url": "https://zenodo.org/records/22143545",
+    "metadata_url": "https://zenodo.org/api/records/22143545",
+    "archive_files": [
+      {
+        "filename": "Parveen117/RNKE-GATE-v1.1.zip",
+        "size_bytes": 42947,
+        "download_url": "https://zenodo.org/api/records/22143545/files/Parveen117/RNKE-GATE-v1.1.zip/content",
+        "zenodo_checksum": "md5:c01d78da83da4ee55e373f71439869b7",
+        "sha256": "a968a4ac582e7b3591dcd89b20e13e40e64dc2d7e69ba168a0d1e4aff550deee",
+        "git_blob_comparison": {
+          "matched": true,
+          "files_checked": 21,
+          "missing": [],
+          "extra": [],
+          "changed": []
+        }
+      }
+    ],
+    "verification_time": "2026-10-26T14:21:06.745239+00:00",
+    "release_commit": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+    "status": "verified"
+  }
+}

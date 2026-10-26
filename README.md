@@ -1,5 +1,8 @@
 # RNKE Gate
 
+> **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
+
+
 **Proof-carrying authorization for AI agent actions.**
 
 Your agent is going to be talked into something. This is not a gate you
