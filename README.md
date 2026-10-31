@@ -1,5 +1,9 @@
 # RNKE Gate
 
+<!-- patent-status-notice:start -->
+> **Patent pending — rights reserved.** The repository owner confirms filed PCT and/or provisional patent applications in the related invention portfolio. This notice applies to subject matter supported by the applicable pending filings. Public disclosure is not intended to waive patent rights. Existing licences and permissions remain effective. See [PATENT_NOTICE.md](PATENT_NOTICE.md). Apache-2.0, including its Section 3 patent grant, remains in effect.
+<!-- patent-status-notice:end -->
+
 > **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
 
 
@@ -201,6 +205,8 @@ Requires Python 3.10+ and `cryptography`.
 
 ## License
 
-Apache-2.0. Patent position: the recognition-gated authorization and
-proof-carrying validation mechanisms are covered by filed PCT
-applications (Celextrix Private Limited).
+Apache-2.0. The repository owner reports filed PCT applications relating to
+recognition-gated authorization and proof-carrying validation mechanisms.
+The patent licence granted under Apache-2.0 Section 3 remains effective within
+its stated scope and conditions; this notice does not revoke or narrow it.
+Patent rights outside existing grants are reserved. See [PATENT_NOTICE.md](PATENT_NOTICE.md).
